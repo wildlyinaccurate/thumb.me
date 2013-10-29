@@ -7,8 +7,9 @@ class window.Thumb
       e.preventDefault()
 
   setSrc: (src) ->
-    @image.attr 'src', @thumbnailUrl(src)
+    @image.attr 'src', ''
     @setBlur INITIAL_BLUR
+    @image.attr 'src', @thumbnailUrl(src)
 
   setBlur: (@blur) ->
     @image.css
