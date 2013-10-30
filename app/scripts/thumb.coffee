@@ -11,7 +11,11 @@ class window.Thumb
     @setBlur INITIAL_BLUR
     @image.attr 'src', @thumbnailUrl(src)
 
-  setBlur: (@blur) ->
+  setBlur: (blur) ->
+    return if blur == @blur
+
+    @blur = blur
+
     @image.css
       filter: "blur(#{@blur}px)"
       '-webkit-filter': "blur(#{@blur}px)"

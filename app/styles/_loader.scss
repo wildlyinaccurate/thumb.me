@@ -1,6 +1,7 @@
 .loader-container {
   position: fixed;
   width: 100%;
+  max-width: $container-width;
   text-align: center;
 }
 

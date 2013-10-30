@@ -11,6 +11,7 @@
         <meta name="viewport" content="width=device-width">
 
         <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="bower_components/bootstrap-slider/slider.css">
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
     </head>
@@ -31,7 +32,8 @@
             </div>
 
             <div class="thumbnail-container">
-                <h3 class="instructions">Click on the thumbnail to enhance it.</h3>
+                <h4 class="instructions">Move the slider to control the clarity of the image.</h4>
+                <input type="text" class="slider" data-slider-min="0" data-slider-max="20" data-slider-value="20" data-slider-tooltip="hide" />
 
                 <div class="loader-container">
                     <div id="loader">
@@ -61,6 +63,7 @@
         <!-- build:js scripts/main.js -->
         <!-- bower:js -->
         <script src="bower_components/jquery/jquery.js"></script>
+        <script src="bower_components/bootstrap-slider/bootstrap-slider.js"></script>
         <!-- endbower -->
 
         <script src="scripts/thumb.js"></script>

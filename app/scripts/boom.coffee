@@ -8,3 +8,7 @@ $('#thumb-me').submit (e) ->
 
   e.preventDefault()
 
+$('.slider').slider()
+  .on 'slide', (e) ->
+    thumbnail.setBlur e.value
+

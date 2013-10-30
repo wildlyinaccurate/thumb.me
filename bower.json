@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "dependencies": {
     "sass-bootstrap": "~3.0.0",
-    "jquery": "~1.10.2"
+    "jquery": "~2.0.0",
+    "bootstrap-slider": "67e09075baac37e5fde38144fab98424f7e76085"
   },
   "devDependencies": {}
 }
