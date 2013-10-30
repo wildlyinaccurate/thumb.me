@@ -3,8 +3,11 @@ input = $('#thumb-url')
 container = $('.thumbnail-container')
 
 $('#thumb-me').submit (e) ->
-  container.show()
-  thumbnail.setSrc input.val()
+  url = input.val()
+
+  if url != ''
+    container.show()
+    thumbnail.setSrc url
 
   e.preventDefault()
 
